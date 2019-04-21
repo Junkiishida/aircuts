@@ -185,6 +185,53 @@ Shop.find_each do |shop|
     )
   end
 end
+
+Shop.create!(
+  email: "bshop1@aircuts.com",
+  password: "shopaircuts",
+  shop_name: "air barber",
+  owner_name: "Taich",
+  address: "Tokyo",
+  latitude: 36,
+  longitude: 130.5,
+  yelp_id: 279,
+  photo: File.open("./app/assets/images/shop_2.jpg")
+  )
+
+Shop.create!(
+  email: "bshop2@aircuts.com",
+  password: "shopaircuts",
+  shop_name: "air barber",
+  owner_name: "Taishi",
+  address: "Tokyo",
+  latitude: 36,
+  longitude: 130.6,
+  yelp_id: 280,
+  photo: File.open("./app/assets/images/shop_3.jpg")
+  )
+
+Shop.create!(
+  email: "bshop3@aircuts.com",
+  password: "shopaircuts",
+  shop_name: "air barber",
+  owner_name: "Taito",
+  address: "Tokyo",
+  latitude: 36,
+  longitude: 130.7,
+  yelp_id: 281,
+  photo: File.open("./app/assets/images/shop_6.jpg")
+  )
+
+User.create!(
+  email: "bakashi1@aircuts.co.fr",
+  password: "1234asdf",
+  name: "Takeshi",
+  age: 18,
+  gender: "Male",
+  languages: "Japanese"
+  )
+
+
 puts "Finished creating barbers"
 # puts business(parsed_json["businesses"].first["id"])
 # puts reviews(parsed_json["businesses"].first["id"])["reviews"].first["text"]
